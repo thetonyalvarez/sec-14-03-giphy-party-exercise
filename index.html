@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="Description" content="Enter your description here" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Giphy Party!</title>
+	</head>
+	<body>
+		<header class="container py-5">
+			<h1 class="text-center">GIPHY Search Page</h1>
+			<p class="small text-center">
+				Type in a keyword and pull up a random GIF!
+			</p>
+		</header>
+		<section id="form-wrapper" class="container">
+			<form method="post" action="" id="giphy-form" class="form-inline">
+				<div class="col-sm-6 mb-2">
+					<input
+						class="form-control w-100"
+						type="text"
+						id="search-term"
+						placeholder="Type any keyword..."
+					/>
+				</div>
+				<div class="col-sm-3 mb-2">
+					<button
+						type="submit"
+						class="btn btn-primary btn-block"
+						id="submit"
+					>
+						GIF IT UP!
+					</button>
+				</div>
+				<div class="col-sm-3 mb-2">
+					<button
+						type="reset"
+						class="btn btn-danger btn-block"
+						id="delete-all"
+					>
+						Delete All GIFs
+					</button>
+				</div>
+				<div class="form-row"></div>
+			</form>
+		</section>
+		<section id="gif-results" class="container d-flex mt-5 flex-wrap">
+			<!-- <div class="col-sm-6 col-md-4 d-block">
+				<img
+					src="https://media0.giphy.com/media/8kU1mfqXF2vTJtncnF/giphy.gif?cid=d34e27e52sawjitqco78tx9tdeeh3exd5kokalq9kwws9k1n&rid=giphy.gif&ct=g"
+					alt=""
+					class="gif-result-img w-100"
+				/>
+			</div>
+			<div class="col-sm-6 col-md-4 d-block">
+				<img
+					src="https://media3.giphy.com/media/n2IekUAIvjz2w/giphy.gif?cid=d34e27e52sawjitqco78tx9tdeeh3exd5kokalq9kwws9k1n&rid=giphy.gif&ct=g"
+					alt=""
+					class="gif-result-img w-100"
+				/>
+			</div>
+			<div class="col-sm-6 col-md-4 d-block">
+				<img
+					src="https://media2.giphy.com/media/11kKF2EhrQzUcM/giphy.gif?cid=d34e27e52sawjitqco78tx9tdeeh3exd5kokalq9kwws9k1n&rid=giphy.gif&ct=g"
+					alt=""
+					class="gif-result-img w-100"
+				/>
+			</div> -->
+		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+		<script src="https://unpkg.com/axios/dist/axios.js"></script>
+		<script src="app.js"></script>
+	</body>
+</html>
